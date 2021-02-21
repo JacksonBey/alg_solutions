@@ -52,3 +52,4 @@ const binetsFormula = (n) => {
 // console.log('5th',binetsFormula(6))
 // console.log('6th',binetsFormula(7))
 
+
