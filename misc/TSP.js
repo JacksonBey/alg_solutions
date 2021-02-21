@@ -18,7 +18,7 @@ const nearestNeighbor=(S)=>{
         minDistance = Infinity
         for(let j=0;j<S.length;j++){
             // distance = SquareRoot((x2-x1)^2 + (y2-y1)^2))
-            distance += Math.sqrt(((S[j][0]-tour[i][0])**2+(S[j][1]-tour[i][1])**2))
+            distance = Math.sqrt(((S[j][0]-tour[i][0])**2+(S[j][1]-tour[i][1])**2))
             // console.log('distance',distance)
              if(distance < minDistance) {
                  minDistance = distance
