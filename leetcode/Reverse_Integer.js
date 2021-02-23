@@ -39,3 +39,6 @@ var reverse = function(x) {
 
     return x
 };
+
+console.log(reverse(21123123))
+console.log(reverse(-1))
