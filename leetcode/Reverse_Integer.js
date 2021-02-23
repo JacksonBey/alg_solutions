@@ -16,3 +16,26 @@
 // 5. join array
 // 6. if isNegative is true, multiply by -1 
 //for (i = 0; i < 5; i++) 
+
+
+var reverse = function(x) {
+    let isNegative = false
+    if(x < 0 ){
+        isNegative = true
+        x = x * -1
+    }
+
+    x = x.toString().split('').reverse()
+
+    x = x.join('')
+    if ( x >= ((2**31)-1)){
+        return 0
+    }
+    
+    if (isNegative === true){
+        x = x * -1
+    }
+
+
+    return x
+};
