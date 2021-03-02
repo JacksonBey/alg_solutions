@@ -11,6 +11,9 @@ let array1 = [1]
 let array2= [0,0,1]
 let array3= [1,2,3,3,2]
 
+//sort array
+//then check which number does not have a pair using some method (tbd)
+
 
 const LoneInteger = (array) => {
 
