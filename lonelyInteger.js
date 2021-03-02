@@ -15,3 +15,9 @@ let array3= [1,2,3,3,2]
 const LoneInteger = (array) => {
 
 }
+
+
+//solution using cool XOR bitwise operation!
+const CoolSolution = (array) => {
+
+}
