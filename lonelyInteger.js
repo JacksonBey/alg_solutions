@@ -15,9 +15,28 @@ let array3= [1,2,3,3,2]
 //then check which number does not have a pair using some method (tbd)
 
 
-const LoneInteger = (array) => {
+const LoneInteger=(array)=>{
+  if (array.length===1){
+    return array[0]
+  }
+  let count={}
+  
+  for(let i=0;i<array.length;i++){
+    if (!count[array[i]]){
+      count[array[i]]=1
+    } else {
+      count[array[i]] +=1
+    }
+  }
+  for (const [key, value] of Object.entries(count)) {
+    if(value === 1){
+      return key
+    };
+  }
 
 }
+
+console.log(LoneInteger(array3))
 
 
 //solution using cool XOR bitwise operation!
