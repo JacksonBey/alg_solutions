@@ -36,10 +36,13 @@ const LoneInteger=(array)=>{
 
 }
 
-console.log(LoneInteger(array3))
+// console.log(LoneInteger(array3))
 
 
 //solution using cool XOR bitwise operation!
 const CoolSolution = (array) => {
-
+  let a = array.reduce((a,b) => a ^ b,0)
+  return a
 }
+
+console.log(CoolSolution(array3))
