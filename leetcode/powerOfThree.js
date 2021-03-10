@@ -6,6 +6,14 @@
 // input integer n
 // return true/false
 
+let n1 = 3 //true
+let n2 = 4 // false
+let n3 = 177147 // true
+
 const is_power_of_three = (n) => {
 
 }
+
+console.log('should be: true', is_power_of_three(n1))
+console.log('should be: false', is_power_of_three(n2))
+console.log('should be: true', is_power_of_three(n3))
