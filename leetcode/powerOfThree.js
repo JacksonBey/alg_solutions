@@ -8,12 +8,12 @@
 
 let n1 = 3 //true
 let n2 = 4 // false
-let n3 = 177147 // true
+let n3 = 9 // true
 
 const is_power_of_three = (n) => {
-    for(let i=1; i<n;i++){
-      i *= 3
-      if (i === n) return true
+    for(let i=3; i<=n;i++){
+      if (i === n){ return true
+      } else{i *= 3}
     }
     return false
 }
@@ -22,3 +22,12 @@ console.log('should be: true', is_power_of_three(n1))
 console.log('should be: false', is_power_of_three(n2))
 console.log('should be: true', is_power_of_three(n3))
 
+const is_power_of_three2=(exp,num)=>{
+  console.log(parseInt(exp**(Math.log(num)/Math.log(exp))))
+  console.log(num)
+  return parseInt(exp**(Math.log(num)/Math.log(exp)))===num
+}
+
+// console.log('should be: true', is_power_of_three2(3,n1))
+// console.log('should be: false', is_power_of_three2(3,n2))
+// console.log('should be: true', is_power_of_three2(3,n3))
