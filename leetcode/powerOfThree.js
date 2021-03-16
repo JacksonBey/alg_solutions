@@ -6,9 +6,9 @@
 // input integer n
 // return true/false
 
-// let n1 = 3 //true
-let n2 = 257 // false
-// let n3 = 59049 // true
+let n1 = 3 //true
+let n2 = 8 // false
+let n3 = 59049 // true
 
 const is_power_of_three = (n) => {
     for(let i=3; i<=n;i*=3){if (i === n) return true }
@@ -20,20 +20,18 @@ const is_power_of_three = (n) => {
 // console.log('should be: true', is_power_of_three(n3))
 
 const is_power_of_three2=(exp,num)=>{
-  return parseInt(exp**parseInt((Math.log(num)/Math.log(exp))))===num
+  return (exp**parseInt((Math.log(num)/Math.log(exp))))===num
 }
 
-// console.log('should be: true', is_power_of_three2(3,n1))
-// console.log('should be: false', is_power_of_three2(3,n2))
-// console.log('should be: true', is_power_of_three2(3,n3))
+console.log('should be: true', is_power_of_three2(3,n1))
+console.log('should be: false', is_power_of_three2(3,n2))
+console.log('should be: true', is_power_of_three2(3,n3))
 
 const is_power_of_three3=(n)=>{
-  console.log((Math.log(n)/Math.log(2)))
-  console.log(parseFloat((Math.log(n)/Math.log(2)).toString().substr(0,7)))
   return (
-    parseFloat((Math.log(n)/Math.log(2)).toString().substr(0,7))%1 ===0)
+    parseFloat((Math.log(n)/Math.log(3)).toString().substr(0,15))%1 ===0)
 }
 
 // console.log('should be: true', is_power_of_three3(n1))
-console.log('should be: false', is_power_of_three3(n2))
+// console.log('should be: false', is_power_of_three3(n2))
 // console.log('should be: true', is_power_of_three3(n3))
