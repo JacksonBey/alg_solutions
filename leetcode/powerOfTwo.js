@@ -10,5 +10,8 @@ let n1 = 2 //true
 let n2 = 3 // false
 let n3 = 524288// true
 
-const is_power_of_two = (n) => {
+const is_power_of_three = (n) => {
+  for(let i=3; i<=n;i*=3){if (i === n) return true }
+  return false
 }
+
