@@ -5,3 +5,7 @@
 
 // input integer n
 // return true/false
+
+let n1 = 2 //true
+let n2 = 3 // false
+let n3 = 524288// true
