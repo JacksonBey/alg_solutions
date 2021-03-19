@@ -4,7 +4,6 @@
  * @return {number[]}
  */
  var twoSum = function(nums, target) {
-  let answer = []
   let index1;
   let index2;
   for(index1 = 0; index1 < nums.length; index1++){
