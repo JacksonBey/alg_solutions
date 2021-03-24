@@ -7,3 +7,8 @@
  *     this.next = (next===undefined ? null : next)
  * }
  */
+
+// /**
+//  * @param {ListNode} head
+//  * @return {boolean}
+//  */
