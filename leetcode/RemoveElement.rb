@@ -6,8 +6,10 @@
 
 # The order of elements can be changed. It doesn't matter what you leave beyond the new length.
 
-# /**
-#  * @param {number[]} nums
-#  * @param {number} val
-#  * @return {number}
-#  */
+# @param {Integer[]} nums
+# @param {Integer} val
+# @return {Integer}
+
+def remove_element(nums, val)
+
+end
