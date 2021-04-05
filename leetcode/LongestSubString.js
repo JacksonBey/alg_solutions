@@ -13,19 +13,16 @@ var lengthOfLongestSubstring = function(s) {
   arr.forEach((l,index) => {
       let narr = []
     for (let i =index; i <= arr.length; i++) {
-              if (narr.length > max){
+        if (narr.length > max){
           max = narr.length
         }
       if (narr.includes(arr[i])) {
         if (narr.length > max){
           max = narr.length
+        } else {
+          narr.push(arr[i])
         }
-        break
-      } else {
-        // console.log(arr[i])
-        narr.push(arr[i])
-      }
     }
-  })
+  }})
   return max
 };
